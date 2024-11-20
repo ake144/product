@@ -40,7 +40,7 @@ const NavBar = () => {
           </div>
 
           <div className="flex items-center space-x-4">
-            <Button variant="ghost" size="icon" className="text-gray-400 hover:text-white">
+            <Button variant="ghost" size="icon" className="text-gray-400 ">
               <Sun className="h-5 w-5" />
             </Button>
             <Button className="bg-purple-600 hover:bg-purple-700">
