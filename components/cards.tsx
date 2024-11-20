@@ -1,28 +1,8 @@
 'use client'
 
+import { features } from "@/lib/data";
 import { motion } from "framer-motion";
-import { Code, DatabaseZap, SquarePercent } from "lucide-react";
 
-const features = [
-  {
-    title: 'AFFORDABLE RATES',
-    desc: 'Launch your MVP, platform or tool within budget and schedule',
-    icon: <Code className="w-7 h-7 text-white" />,
-    highlight: 'Automation',
-  },
-  {
-    title: 'BUILD WITHIN BUDGET',
-    desc: 'Monitor and analyze production metrics in real-time for informed decision-making.',
-    icon: <DatabaseZap className="w-7 h-7 text-white" />,
-    highlight: 'Analytics',
-  },
-  {
-    title: 'Performance Tracking',
-    desc: 'Track and optimize manufacturing efficiency with advanced monitoring tools.',
-    icon: <SquarePercent className="w-7 h-7 text-white" />,
-    highlight: 'Tracking',
-  },
-];
 
 const DesignSection = () => {
   return (

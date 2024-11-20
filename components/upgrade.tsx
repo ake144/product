@@ -1,28 +1,8 @@
 'use client'
 
+import { benefits } from "@/lib/data";
 import { motion } from "framer-motion";
-import { BadgeDollarSign, Component, Workflow } from "lucide-react";
 
-const benefits = [
-  {
-    title: 'AFFORDABLE PRODUCT DEVELOPMENT',
-    desc: 'Launch your MVP, platform, or internal tool within budget and schedule.',
-    icon: <BadgeDollarSign className="w-8 h-8 text-white" />,
-    stat: 'Up to 40% savings',
-  },
-  {
-    title: 'HIGH-END DESIGN',
-    desc: 'Upgrade your online presence with high-converting website and front-end design.',
-    icon: <Component className="w-8 h-8 text-white" />,
-    stat: '99% user satisfaction',
-  },
-  {
-    title: 'MODERN AUTOMATION',
-    desc: 'Automate your business 10X faster using the latest low-code systems and internal tools.',
-    icon: <Workflow className="w-8 h-8 text-white" />,
-    stat: '10x faster production',
-  },
-];
 
 const UpgradeSection = () => {
   return (
