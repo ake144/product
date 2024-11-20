@@ -54,7 +54,7 @@ export function LandingPage() {
           <TestimonialsSkill   />
 
             {/* Break New Frontiers Section */}
-            <section className="py-16 px-4 bg-gradient-to-b from-purple-900/20 to-transparent">
+            <section className="pt-16 px-4 bg-gradient-to-b from-purple-900/20 to-transparent">
             
             <ContactForm  />
             </section>
