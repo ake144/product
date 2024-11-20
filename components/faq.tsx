@@ -35,7 +35,7 @@ export default function FAQ() {
   }
 
   return (
-    <section className="relative min-h-screen w-full bg-black flex items-center justify-center py-24 px-4 overflow-hidden">
+    <section className="relative min-h-screen w-full bg-black flex items-center justify-center pb-24 px-4 overflow-hidden">
       {/* Background gradient effects */}
       <div className="absolute inset-0 bg-black">
         <div className="absolute inset-0 bg-gradient-to-b from-purple-900/20 via-purple-900/10 to-transparent opacity-80" />

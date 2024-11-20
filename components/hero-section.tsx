@@ -10,9 +10,7 @@ import { useEffect, useState } from "react";
 
 const HeroSection=()=>{
     const [isVisible, setIsVisible] = useState(false)
-    const [scrolled, setScrolled] = useState(false)
-
-    const FADE_DOWN_ANIMATION_VARIANTS = {
+     const FADE_DOWN_ANIMATION_VARIANTS = {
         hidden: { opacity: 0, y: -10 },
         show: { opacity: 1, y: 0, transition: { type: "spring" } },
       };
@@ -21,11 +19,7 @@ const HeroSection=()=>{
 
       useEffect(() => {
         setIsVisible(true)
-        const handleScroll = () => {
-          setScrolled(window.scrollY > 50)
-        }
-        window.addEventListener('scroll', handleScroll)
-        return () => window.removeEventListener('scroll', handleScroll)
+       
       }, [])
     
       

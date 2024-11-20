@@ -24,6 +24,8 @@ export default function ContactForm() {
 
     // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 1000))
+
+    console.log(data)
     
     setIsLoading(false)
     toast({

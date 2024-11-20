@@ -2,7 +2,6 @@
 
 
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
 
 
 
@@ -76,7 +75,8 @@ const TestimonialsSkill = ()=>{
           },
         }}
       >
-        {/* Duplicate technologies to create seamless looping */}
+
+
         {[...technologies, ...technologies].map((tech, index) => (
           <div
             key={index}

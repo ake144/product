@@ -9,10 +9,9 @@ import { useEffect, useState } from "react"
 const NavBar = () => {
 
     const [scrolled, setScrolled] = useState(false)
-    const [isVisible, setIsVisible] = useState(false)
+   
 
     useEffect(() => {
-        setIsVisible(true)
         const handleScroll = () => {
           setScrolled(window.scrollY > 50)
         }

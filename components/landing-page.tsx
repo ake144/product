@@ -1,6 +1,5 @@
 'use client'
 
-import { useState, useEffect } from 'react'
 
 import HowWorks from './how-works/page'
 import ContactForm from './contact-form'
@@ -43,7 +42,7 @@ export function LandingPage() {
 
 
       {/* Testimonials Section */}
-      <section className="py-24 px-4 bg-black/80 backdrop-blur-sm">
+      <section className="pt-24 px-4 bg-black/80 backdrop-blur-sm">
 
 
 
