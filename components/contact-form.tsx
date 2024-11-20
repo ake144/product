@@ -37,8 +37,8 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="min-h-screen w-full bg-[#0a0a14] bg-gradient-to-b from-[#0a0a14] to-[#1a0a2e] p-4 flex flex-col items-center justify-center">
-      <div className="w-full max-w-lg space-y-6">
+    <div className="min-h-screen w-full  bg-[#0a0a14] bg-gradient-to-b from-[#0a0a14] to-[#1a0a2e] pt-4 px-4 flex flex-col items-center justify-center">
+      <div className="w-full max-w-lg space-y-7">
         <div className="text-center space-y-2">
           <h1 className="text-4xl md:text-5xl font-bold">
             <span className="text-orange-500">Drive</span>
