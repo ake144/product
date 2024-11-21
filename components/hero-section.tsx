@@ -2,7 +2,8 @@
 
 
 import { motion } from "framer-motion";
-import { Button } from "./ui/button";
+import { MovingButton } from "./ui/moving-border";
+import { Button  }   from "./ui/button"
 import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -30,10 +31,16 @@ return(
       
       <div className="container mx-auto px-4 relative z-10">
         <div className={`max-w-4xl mx-auto text-center transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-          <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-purple-400/10 to-purple-400/20 rounded-full px-4 py-1 mb-8 backdrop-blur-sm border border-purple-400/10">
-            <span className="text-purple-300 text-sm">✨ Transforming Manufacturing</span>
-            <span className="bg-purple-500 rounded-full px-2 py-0.5 text-xs text-white">BETA</span>
-          </div>
+
+        <MovingButton
+            containerClassName="w-auto h-1/2 mb-6 max-w-[300px] mx-auto"
+            borderRadius="1.75rem"
+            className="text-purple-300 bg-gradient-to-r from-purple-400/10 to-purple-400/20 w-auto px-6 py-3 text-sm inline-flex items-center justify-center rounded-full backdrop-blur-sm border border-purple-400/10 hover:scale-105 transform transition-all"
+          >
+            ✨ Transforming Manufacturing
+          </MovingButton>
+
+           
           
           {/* Animated Heading */}
           <motion.h1 
@@ -59,11 +66,18 @@ return(
           </motion.p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button size="lg" className="bg-purple-600 hover:bg-purple-700 min-w-[200px]">
-              Get Started Now
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </div>
+          <Button
+            size="lg"
+            className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-6 py-3 rounded-full min-w-[200px] flex items-center justify-center gap-3 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-purple-300"
+          >
+            <span>Get Started Now</span>
+            <ArrowRight className="ml-2 h-5 w-5 transform transition-all duration-300 ease-in-out group-hover:translate-x-2" />
+          </Button>
+        </div>
+
+         
+
+
         </div>
       </div>
     </section>

@@ -38,18 +38,9 @@ export function LandingPage() {
 
               <HowWorks  />
             </section>
-
-
-
       {/* Testimonials Section */}
       <section className="pt-24 px-4 bg-black/80 backdrop-blur-sm">
-
-
-
-
           <div className="min-h-screen bg-black text-white">
-
-
             {/* Diverse Skills Section */}
           <TestimonialsSkill   />
 
