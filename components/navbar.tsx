@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Diamond, Sun, Menu, X } from "lucide-react";
+import { ArrowRight, Sun, Menu, X } from "lucide-react";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { useEffect, useState } from "react";
