@@ -20,22 +20,21 @@ const NavBar = () => {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-black/50 backdrop-blur-lg" : ""
-      }`}
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-black/50 backdrop-blur-lg" : ""
+        }`}
     >
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
-       {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <Image
-              src="/image3.png" // Replace with the actual path to your logo file
-              alt="ProductFrontiers Logo"
-              width={40}
-              height={40}
-              className="h-10 w-10" // Adjust size as needed
-            />
-            <span className="font-bold text-white text-lg">ProductFrontiers</span>
-          </div>
+        {/* Logo */}
+        <div className="flex items-center space-x-2">
+          <Image
+            src="/image3.png" 
+            alt="ProductFrontiers Logo"
+            width={40}
+            height={40}
+            className="h-10 w-10"
+          />
+          <span className="font-bold text-white text-lg">ProductFrontiers</span>
+        </div>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8 bg-gray-900/50 backdrop-blur-sm rounded-full px-6 py-2 border border-gray-800">

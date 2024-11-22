@@ -28,11 +28,11 @@ const UpgradeSection = () => {
 
   return (
     <section className="relative py-32 overflow-hidden bg-black">
-      {/* Background */}
+
       <div className="absolute inset-0 bg-gradient-to-b from-gray-950 to-black opacity-90" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_800px_at_center,#3b0764,transparent)] opacity-40" />
 
-      {/* Floating Orbs */}
+ 
       <motion.div
         className="absolute top-10 left-1/4 w-24 h-24 bg-purple-700 rounded-full opacity-30 blur-3xl"
         animate={{ y: [0, 30, 0] }}
@@ -71,7 +71,7 @@ const UpgradeSection = () => {
           </motion.p>
         </motion.div>
 
-        {/* Benefits */}
+      
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -109,7 +109,7 @@ const UpgradeSection = () => {
         </motion.div>
       </div>
 
-      {/* Decorative Accent Line */}
+ 
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent" />
     </section>
   );

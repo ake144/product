@@ -16,23 +16,19 @@ export default function FAQ() {
 
   return (
     <section className="relative min-h-screen w-full bg-black flex items-center justify-center pb-24 px-4 overflow-hidden">
-      {/* Background gradient effects */}
       <div className="absolute inset-0 bg-black">
-  {/* Subtle Gradient Background */}
-  <div className="absolute inset-0 bg-gradient-to-b from-purple-900/15 via-purple-800/5 to-transparent opacity-70" />
 
-  {/* Soft Top Glow */}
-  <div
-    className="absolute top-0 left-1/4 -translate-x-1/2 w-[500px] h-[500px] bg-purple-600/30 rounded-full blur-[120px]"
-    style={{ opacity: 0.5 }}
-  />
+        <div className="absolute inset-0 bg-gradient-to-b from-purple-900/15 via-purple-800/5 to-transparent opacity-70" />
 
-  {/* Soft Bottom Glow */}
-  <div
-    className="absolute bottom-0 right-1/4 translate-x-1/2 w-[500px] h-[500px] bg-purple-600/30 rounded-full blur-[120px]"
-    style={{ opacity: 0.5 }}
-  />
-</div>
+        <div
+          className="absolute top-0 left-1/4 -translate-x-1/2 w-[500px] h-[500px] bg-purple-600/30 rounded-full blur-[120px]"
+          style={{ opacity: 0.5 }}
+        />
+        <div
+          className="absolute bottom-0 right-1/4 translate-x-1/2 w-[500px] h-[500px] bg-purple-600/30 rounded-full blur-[120px]"
+          style={{ opacity: 0.5 }}
+        />
+      </div>
 
 
 
@@ -58,9 +54,8 @@ export default function FAQ() {
               >
                 <span className="font-medium text-left">{item.question}</span>
                 <ChevronDown
-                  className={`w-5 h-5 transition-transform duration-200 ${
-                    openFaq === index ? "rotate-180" : ""
-                  }`}
+                  className={`w-5 h-5 transition-transform duration-200 ${openFaq === index ? "rotate-180" : ""
+                    }`}
                 />
               </button>
               <AnimatePresence>

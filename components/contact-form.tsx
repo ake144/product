@@ -26,13 +26,13 @@ export default function ContactForm() {
     await new Promise((resolve) => setTimeout(resolve, 1000))
 
     console.log(data)
-    
+
     setIsLoading(false)
     toast({
       title: "Message sent!",
       description: "We'll get back to you as soon as possible.",
     })
-    
+
     event.currentTarget.reset()
   }
 
@@ -41,7 +41,7 @@ export default function ContactForm() {
       <div className="w-full max-w-lg space-y-7">
         <div className="text-center space-y-2">
           <h1 className="text-4xl md:text-5xl font-bold">
-          
+
             <span className="text-white">Break </span>
             <span className="text-orange-500">New Frontiers</span>
           </h1>
@@ -49,7 +49,7 @@ export default function ContactForm() {
             Tap into the future of development, now!
           </p>
         </div>
-        
+
         <form onSubmit={onSubmit} className="space-y-4">
           <div className="space-y-2">
             <label htmlFor="name" className="text-sm text-gray-400">
@@ -63,7 +63,7 @@ export default function ContactForm() {
               className="bg-[#1e1e2f] border-[#2e2e3f] text-white placeholder-gray-500"
             />
           </div>
-          
+
           <div className="space-y-2">
             <label htmlFor="email" className="text-sm text-gray-400">
               Email
@@ -77,7 +77,7 @@ export default function ContactForm() {
               className="bg-[#1e1e2f] border-[#2e2e3f] text-white placeholder-gray-500"
             />
           </div>
-          
+
           <div className="space-y-2">
             <label htmlFor="message" className="text-sm text-gray-400">
               Message
@@ -91,7 +91,7 @@ export default function ContactForm() {
             />
           </div>
 
-          <Button 
+          <Button
             type="submit"
             className="w-full bg-purple-700 hover:bg-purple-600 text-white"
             disabled={isLoading}

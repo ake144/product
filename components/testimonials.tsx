@@ -5,15 +5,15 @@ import { motion } from "framer-motion";
 
 const TestimonialsSkill = () => {
   return (
-    <section  id="testimonials" className="relative py-40 overflow-hidden">
-      {/* Background Effects */}
+    <section id="testimonials" className="relative py-40 overflow-hidden">
+  
       <div className="absolute inset-0 bg-black/95" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_600px_at_center_90%,rgba(59,7,100,0.7),transparent)]" />
 
       <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
-      
+
       <div className="relative z-10">
-        {/* Section Header */}
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -29,7 +29,7 @@ const TestimonialsSkill = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-purple-600 to-indigo-600 mx-auto mb-6" />
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-             Coding tools and technologies for businesses building our world.
+            Coding tools and technologies for businesses building our world.
           </p>
         </motion.div>
 
@@ -43,11 +43,11 @@ const TestimonialsSkill = () => {
           <div className="overflow-hidden py-10">
             <motion.div
               className="flex gap-12 items-center"
-         
+
               animate={{
                 x: [0, -(technologies.length * 140)], // Assuming each item has a minimum width of 140px
               }}
-              
+
               transition={{
                 x: {
                   repeat: Infinity,

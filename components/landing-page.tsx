@@ -18,52 +18,49 @@ export function LandingPage() {
     <div className="min-h-screen bg-black ">
       <div className="relative min-h-screen bg-gradient-to-br from-purple-950 via-gray-900 to-black overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(120,0,200,0.15),rgba(0,0,0,0.8))]" />
-        
+
         <NavBar />
 
 
         <main className="relative">
-        <HeroSection  />
+          <HeroSection />
 
-       {/* Design automation */}
-
-              <DesignSection  />
+          <DesignSection />
 
 
-          {/* upgrade */}
-         <UpgradeSection  />
+          <UpgradeSection />
 
 
-            <section className="py-24 px-4 bg-black/80 backdrop-blur-sm">
+          <section className="py-24 px-4 bg-black/80 backdrop-blur-sm">
 
-              <HowWorks  />
-            </section>
-      {/* Testimonials Section */}
-      <section className="pt-24 px-4 bg-black/80 backdrop-blur-sm">
-          <div className="min-h-screen bg-black text-white">
-            {/* Diverse Skills Section */}
-          <TestimonialsSkill   />
-
-            {/* Break New Frontiers Section */}
-            <section className=" px-4 bg-gradient-to-b from-purple-900/20 to-transparent">
+            <HowWorks />
+          </section>
+      
+          <section className="pt-24 px-4 bg-black/80 backdrop-blur-sm">
+            <div className="min-h-screen bg-black text-white">
             
-            <ContactForm  />
-            </section>
-          </div>
-        
-      </section>
+              <TestimonialsSkill />
+
+           
+              <section className=" px-4 bg-gradient-to-b from-purple-900/20 to-transparent">
+
+                <ContactForm />
+              </section>
+            </div>
+
+          </section>
 
 
 
 
           {/* FAQ Section */}
-              <FAQ  />
-              </main>
+          <FAQ />
+        </main>
 
 
 
-         {/* Footer */}
-        <Footer  />
+        {/* Footer */}
+        <Footer />
       </div>
     </div>
   )

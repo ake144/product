@@ -9,7 +9,7 @@ export default function DesignSection() {
     <section className="relative py-32 overflow-hidden">
       <div className="absolute inset-0 bg-black/95" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_600px_at_50%_-20%,#3b0764,transparent)]" />
-      
+
       <div className="container relative z-10 mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
