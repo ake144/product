@@ -41,11 +41,12 @@ export default function ContactForm() {
       <div className="w-full max-w-lg space-y-7">
         <div className="text-center space-y-2">
           <h1 className="text-4xl md:text-5xl font-bold">
-            <span className="text-orange-500">Drive</span>
-            <span className="text-white">Innovation</span>
+          
+            <span className="text-white">Break </span>
+            <span className="text-orange-500">New Frontiers</span>
           </h1>
           <p className="text-gray-400 text-sm">
-            Take actions towards success, Reach out now!
+            Tap into the future of development, now!
           </p>
         </div>
         

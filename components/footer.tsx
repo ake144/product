@@ -1,3 +1,6 @@
+
+
+import Image from "next/image"
 import {  Twitter, Linkedin,  Diamond,} from "lucide-react"
 import Link from "next/link"
 
@@ -8,9 +11,15 @@ const Footer= () => {
       <div className="max-w-7xl mx-auto flex flex-col items-center justify-between gap-8 md:flex-row md:items-start">
         {/* Logo Section */}
         <div className="flex items-center space-x-2">
-          <Diamond className="w-8 h-8 text-white"  />
-          <span className="text-white font-medium">ProductFrontiers</span>
-        </div>
+            <Image
+              src="/image3.png" 
+              alt="ProductFrontiers Logo"
+              width={40}
+              height={40}
+              className="h-10 w-10" 
+            />
+            <span className="font-bold text-white text-lg">ProductFrontiers</span>
+          </div>
 
         {/* Center Section */}
         <div className="flex flex-col items-center md:items-end space-y-4">
