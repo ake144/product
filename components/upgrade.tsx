@@ -2,7 +2,7 @@
 
 import { benefits } from "@/lib/data";
 import { motion } from "framer-motion";
-import Image from "next/image";
+
 
 const UpgradeSection = () => {
   const containerVariants = {

@@ -66,14 +66,14 @@ return(
           </motion.p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Button
-            size="lg"
-            className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-6 py-3 rounded-full min-w-[200px] flex items-center justify-center gap-3 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-purple-300"
-          >
-            <span>Get Started Now</span>
-            <ArrowRight className="ml-2 h-5 w-5 transform transition-all duration-300 ease-in-out group-hover:translate-x-2" />
-          </Button>
-        </div>
+        <Button
+          size="lg"
+          className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-6 py-3 rounded-full min-w-[200px] flex items-center justify-center gap-3 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-4 focus:ring-purple-300"
+        >
+          <span>Get Started Now</span>
+          <ArrowRight className="ml-2 h-5 w-5 transform transition-all duration-300 ease-in-out group-hover:translate-x-2" />
+        </Button>
+      </div>
 
          
 

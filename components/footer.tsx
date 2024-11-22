@@ -1,4 +1,4 @@
-import { Facebook, Twitter, LinkedinIcon as LinkedIn, Linkedin,  Diamond,} from "lucide-react"
+import {  Twitter, Linkedin,  Diamond,} from "lucide-react"
 import Link from "next/link"
 
 const Footer= () => {
