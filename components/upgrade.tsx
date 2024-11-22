@@ -2,7 +2,7 @@
 
 import { benefits } from "@/lib/data";
 import { motion } from "framer-motion";
-
+import { PinContainer } from "@/components/ui/3d-pin";
 
 const UpgradeSection = () => {
   const containerVariants = {
@@ -83,30 +83,27 @@ const UpgradeSection = () => {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="relative group overflow-hidden"
+              className="h-[24rem] flex items-center justify-center"
             >
-              <motion.div
-                initial={{ scale: 1 }}
-                whileHover={{ scale: 1.05, rotate: 2 }}
-                transition={{ duration: 0.4 }}
-                className="absolute inset-0 bg-gradient-to-br from-purple-600/10 to-indigo-600/10 rounded-3xl blur-2xl group-hover:blur-3xl transition-all duration-500 opacity-0 group-hover:opacity-100"
-              />
-              <div className="relative bg-gray-900/50 backdrop-blur-xl rounded-3xl p-8 border border-purple-500/10 group-hover:border-purple-500/30 transition-all duration-300">
-                <div className="absolute top-0 right-0 bg-gradient-to-br from-purple-600/20 to-indigo-600/20 px-4 py-1 rounded-bl-2xl rounded-tr-3xl">
-                  <span className="text-purple-300 text-sm font-medium">
-                    {benefit.stat}
-                  </span>
+              <PinContainer title={benefit.title} href="#">
+                <div className="flex flex-col p-4 tracking-tight text-slate-100/50 w-[20rem] h-[20rem]">
+                  <div className="absolute top-0 right-0 bg-gradient-to-br from-purple-600/20 to-indigo-600/20 px-4 py-1 rounded-bl-2xl rounded-tr-2xl">
+                    <span className="text-purple-300 text-sm font-medium">
+                      {benefit.stat}
+                    </span>
+                  </div>
+                  <div className="bg-gradient-to-br from-purple-600 to-indigo-600 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-xl">
+                    {benefit.icon}
+                  </div>
+                  <h3 className="text-2xl font-bold text-slate-100 mb-4">
+                    {benefit.title}
+                  </h3>
+                  <p className="text-slate-400 text-sm leading-relaxed">
+                    {benefit.desc}
+                  </p>
+                  <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-purple-500 via-indigo-500 to-blue-500 opacity-20" />
                 </div>
-                <div className="bg-gradient-to-br from-purple-600 to-indigo-600 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-xl group-hover:scale-110 transition-transform duration-300">
-                  {benefit.icon}
-                </div>
-                <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-purple-300 transition-colors duration-300">
-                  {benefit.title}
-                </h3>
-                <p className="text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors duration-300">
-                  {benefit.desc}
-                </p>
-              </div>
+              </PinContainer>
             </motion.div>
           ))}
         </motion.div>
