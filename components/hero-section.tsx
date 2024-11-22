@@ -26,8 +26,9 @@ const HeroSection=()=>{
       
 return(
     <section className="relative h-[calc(100vh-5rem)] flex items-center">
-      <div className="absolute inset-0 bg-gradient-to-b from-purple-950/50 via-black to-black" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3b0764,transparent)]" />
+     <div className="absolute inset-0 bg-gradient-to-b from-purple-950/40 via-black to-black" />
+<div className="absolute inset-0 bg-[radial-gradient(circle_500px_at_50%_200px,#2c0548,transparent)] opacity-80" />
+
       
       <div className="container mx-auto px-4 relative z-10">
         <div className={`max-w-4xl mx-auto text-center transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
