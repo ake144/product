@@ -20,7 +20,7 @@ const NavBar = () => {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 w-full z-[55] transition-all duration-300 ${
         scrolled ? "bg-black/50 backdrop-blur-lg" : ""
       }`}
     >
