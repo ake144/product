@@ -8,7 +8,6 @@ import React, {
   useRef,
   useEffect,
 } from "react";
-import FuzzyOverlay from "../fuzzy";
 
 const MouseEnterContext = createContext<
   [boolean, React.Dispatch<React.SetStateAction<boolean>>] | undefined
@@ -49,7 +48,7 @@ export const CardContainer = ({
     <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
       <div
         className={cn(
-          "py-20  relative flex items-center justify-center",
+          "py-20 flex items-center justify-center",
           containerClassName,
         )}
         style={{
