@@ -20,14 +20,15 @@ const NavBar = () => {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-black/50 backdrop-blur-lg" : ""
-        }`}
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        scrolled ? "bg-black/50 backdrop-blur-lg" : ""
+      }`}
     >
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <Image
-            src="/image3.png" 
+            src="/image3.png"
             alt="ProductFrontiers Logo"
             width={40}
             height={40}
@@ -37,17 +38,29 @@ const NavBar = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-8 bg-gray-900/50 backdrop-blur-sm rounded-full px-6 py-2 border border-gray-800">
-          <Link href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
+        <div className="hidden md:flex items-center space-x-8 bg-transparent/20 backdrop-blur-md rounded-full px-6 py-3 border border-gray-800">
+          <Link
+            href="#"
+            className="text-sm text-gray-300 hover:text-white transition-colors"
+          >
             Home
           </Link>
-          <Link href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
+          <Link
+            href="#"
+            className="text-sm text-gray-300 hover:text-white transition-colors"
+          >
             Services
           </Link>
-          <Link href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
+          <Link
+            href="#"
+            className="text-sm text-gray-300 hover:text-white transition-colors"
+          >
             Features
           </Link>
-          <Link href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
+          <Link
+            href="#"
+            className="text-sm text-gray-300 hover:text-white transition-colors"
+          >
             About
           </Link>
         </div>
@@ -59,7 +72,11 @@ const NavBar = () => {
             aria-label={menuOpen ? "Close menu" : "Open menu"}
             className="text-gray-400 p-2 focus:outline-none"
           >
-            {menuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {menuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
           </button>
         </div>
 
