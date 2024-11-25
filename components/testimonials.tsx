@@ -5,10 +5,8 @@ import { motion } from "framer-motion";
 
 const TestimonialsSkill = () => {
   return (
-    <section id="testimonials" className="relative py-40 overflow-hidden">
-      <div className="absolute inset-0 bg-black/95" />
+    <section id="testimonials" className="relative py-56 overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_800px_at_center_90%,rgba(59,7,100,0.5),transparent)]" />
-
       <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
 
       <div className="relative z-10">

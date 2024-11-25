@@ -1,7 +1,7 @@
-import Image from "next/image";
+import { RocketIllustrator } from "../icons";
 export default function HowWorks() {
   return (
-    <div className="relative bg-black text-white py-16 px-4">
+    <div className="relative bg-transparent text-white py-16 px-4">
       {/* Background Gradient */}
       <div
         className="absolute inset-x-0 -top-20 z-10 transform-gpu blur-3xl"
@@ -27,10 +27,9 @@ export default function HowWorks() {
         </div>
 
         {/* Grid Layout */}
-        <div className="grid md:grid-cols-2 gap-8 items-center">
+        <div className="grid md:grid-cols-2 space-x-10 gap-20 items-center">
           {/* Steps Section */}
           <div className="space-y-12 relative">
-            {/* Vertical Line */}
             <div className="absolute left-6 top-12 bottom-12 w-px bg-white hidden sm:block" />
 
             {/* Step 1 */}
@@ -84,56 +83,13 @@ export default function HowWorks() {
             </div>
           </div>
 
-          {/* Gears Illustration */}
           <div className="relative h-[500px] hidden md:block">
-            <Image
-              width={1000}
-              height={1000}
-              src={
-                "https://illustrations.popsy.co/purple/man-riding-a-rocket.svg"
-              }
-              alt="illustration for success"
-            />
+            <div>
+              <RocketIllustrator className="w-[550px] h-[550px]" />
+            </div>
           </div>
         </div>
       </div>
-
-      {/* Styles */}
-      <style jsx>{`
-        .gear-teeth {
-          background: repeating-conic-gradient(
-            from 0deg,
-            transparent 0deg 15deg,
-            currentColor 15deg 30deg
-          );
-        }
-
-        @keyframes spin-slow {
-          from {
-            transform: rotate(0deg);
-          }
-          to {
-            transform: rotate(360deg);
-          }
-        }
-
-        @keyframes spin-slow-reverse {
-          from {
-            transform: rotate(360deg);
-          }
-          to {
-            transform: rotate(0deg);
-          }
-        }
-
-        .animate-spin-slow {
-          animation: spin-slow 20s linear infinite;
-        }
-
-        .animate-spin-slow-reverse {
-          animation: spin-slow-reverse 20s linear infinite;
-        }
-      `}</style>
     </div>
   );
 }

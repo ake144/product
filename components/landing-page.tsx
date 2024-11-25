@@ -24,14 +24,15 @@ export function LandingPage() {
             <HowWorks />
           </section>
 
-          <section className="pt-24 px-4 bg-black/80 backdrop-blur-sm">
+          <section className="pt-24 -mb-10 px-4 bg-black">
             <div className="min-h-screen bg-black text-white">
               <TestimonialsSkill />
             </div>
+
+            <FAQ />
           </section>
 
           {/* FAQ Section */}
-          <FAQ />
         </main>
 
         {/* Footer */}
