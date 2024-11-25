@@ -9,7 +9,7 @@ export default function DesignSection() {
   return (
     <section className="relative py-32 overflow-hidden">
       <div className="absolute inset-0 bg-black/95" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_600px_at_50%_-20%,#3b0764,transparent)]" />
+      {/* <div className="absolute inset-0 bg-[radial-gradient(circle_600px_at_50%_-20%,#3b0764,transparent)]" /> */}
 
       <div className="container relative z-10 mx-auto px-4">
         <motion.div
@@ -47,7 +47,7 @@ export default function DesignSection() {
                   <FuzzyOverlay />
                   <CardItem
                     translateZ="100"
-                    className="bg-gradient-to-br from-purple-600 to-indigo-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6 shadow-lg"
+                    className="bg-gradient-to-br from-purple-600/20 shadow-lg to-indigo-600/30 border-2 border-gray-400/40 w-16 h-16 rounded-xl flex items-center justify-center mb-6 shadow-lg"
                   >
                     {feature.icon}
                   </CardItem>
