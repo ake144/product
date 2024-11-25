@@ -135,7 +135,7 @@ export default function Home() {
   };
 
   return (
-    <div className="flex justify-center flex-col items-center min-h-screen w-full">
+    <div className="relative flex justify-center flex-col items-center min-h-screen w-full">
       <motion.h1
         className="text-2xl md:text-2xl lg:text-3xl font-geist-sans font-bold text-white mb-8 tracking-tight"
         initial="hidden"
@@ -186,7 +186,7 @@ export default function Home() {
           ""
         )}
         <main
-          className={`${showSuccessMsg ? "w-full" : "w-full md:mt-5 md:w-[70%]"}`}
+          className={`${showSuccessMsg ? "w-full" : "w-full md:mt-5 back md:w-[70%]"}`}
         >
           {showSuccessMsg ? (
             <AnimatePresence mode="wait">

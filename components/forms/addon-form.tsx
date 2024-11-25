@@ -1,6 +1,6 @@
-import FormWrapper from "../form-wrapper";
-import { Checkbox } from "@/components/ui/checkbox";
 import { FormItems } from "@/app/form/page";
+import { Checkbox } from "@/components/ui/checkbox";
+import FormWrapper from "../form-wrapper";
 type stepProps = FormItems & {
   updateForm: (fieldToUpdate: Partial<FormItems>) => void;
 };
@@ -25,7 +25,7 @@ const AddonsForm = ({ addOns, yearly, updateForm }: stepProps) => {
       title="Pick add-ons"
       description="Add-ons help enhance your gaming experience"
     >
-      <div className="flex flex-col gap-3">
+      <div className="flex text-white flex-col gap-3">
         {addOns.map((addOn) => (
           <div
             className={`border border-neutral-600 flex items-center gap-3 p-3 rounded-md ${

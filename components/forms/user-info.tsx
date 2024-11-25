@@ -21,7 +21,9 @@ const UserInfoForm = ({
     >
       <div className="w-full flex flex-col gap-5">
         <div className="flex flex-col gap-2">
-          <Label htmlFor="name">Name</Label>
+          <Label className="text-white" htmlFor="name">
+            Name
+          </Label>
           <Input
             autoFocus
             type="text"
@@ -36,7 +38,9 @@ const UserInfoForm = ({
           {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
         </div>
         <div className="flex flex-col gap-2">
-          <Label htmlFor="email">Email Address</Label>
+          <Label className="text-white" htmlFor="email">
+            Email Address
+          </Label>
           <Input
             type="text"
             name="email"
@@ -52,7 +56,9 @@ const UserInfoForm = ({
           )}
         </div>
         <div className="flex flex-col gap-2">
-          <Label htmlFor="phone">Phone Number</Label>
+          <Label className="text-white" htmlFor="phone">
+            Phone Number
+          </Label>
           <Input
             type="tel"
             name="phone"
