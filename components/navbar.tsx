@@ -85,9 +85,9 @@ const NavBar = () => {
           <Button variant="ghost" size="icon" className="text-gray-400 ">
             <Sun className="h-5 w-5" />
           </Button>
-          <Button className="bg-purple-600 hover:bg-purple-700">
+          <Button className="group bg-purple-600 rounded-full hover:bg-purple-700">
             Start Now
-            <ArrowRight className="ml-2 h-4 w-4" />
+            <ArrowRight className="translate-x-0 duration-300 group-hover:translate-x-2 ml-2 h-4 w-4" />
           </Button>
         </div>
       </div>
