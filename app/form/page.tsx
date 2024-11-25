@@ -10,6 +10,8 @@ import AddonsForm from "@/components/forms/addon-form";
 import FinalStep from "@/components/forms/final-form";
 import SuccessMessage from "@/components/forms/success-msg";
 import SideBar from "@/components/sidebar";
+import { motion } from "framer-motion";
+import { Span } from "next/dist/trace";
 interface AddOn {
   id: number;
   checked: boolean;
@@ -60,6 +62,7 @@ const initialValues: FormItems = {
 
 export default function Home() {
   const [formData, setFormData] = useState(initialValues);
+
   const [errors, setErrors] = useState<Record<string, string>>({});
   const {
     previousStep,
@@ -126,13 +129,56 @@ export default function Home() {
     }
     nextStep();
   };
+  const FADE_DOWN_ANIMATION_VARIANTS = {
+    hidden: { opacity: 0, y: -10 },
+    show: { opacity: 1, y: 0, transition: { type: "spring" } },
+  };
 
   return (
-    <div className="flex justify-center items-center min-h-screen w-full">
+    <div className="flex justify-center flex-col items-center min-h-screen w-full">
+      <motion.h1
+        className="text-2xl md:text-2xl lg:text-3xl font-geist-sans font-bold text-white mb-8 tracking-tight"
+        initial="hidden"
+        animate="show"
+        variants={FADE_DOWN_ANIMATION_VARIANTS}
+      >
+        {currentStepIndex === 0 && (
+          <span>
+            Making Hiring{" "}
+            <span className=" bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-600">
+              Easier
+            </span>
+          </span>
+        )}
+        {currentStepIndex === 1 && (
+          <span>
+            Build Your{" "}
+            <span className=" bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-600">
+              Adventure
+            </span>
+          </span>
+        )}
+        {currentStepIndex === 2 && (
+          <span>
+            Handle Teams{" "}
+            <span className=" bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-600">
+              Effortlessly
+            </span>
+          </span>
+        )}
+        {currentStepIndex === 3 && (
+          <span>
+            Time management{" "}
+            <span className=" bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-600">
+              at Ease
+            </span>
+          </span>
+        )}
+      </motion.h1>
       <div
         className={`flex justify-between ${
-          currentStepIndex === 1 ? "h-[600px] md:h-[500px]" : "h-[500px]"
-        } w-11/12 max-w-4xl relative m-1 rounded-lg border border-neutral-700 bg-[#262626] p-4`}
+          currentStepIndex === 1 ? "h-[700px] md:h-[700px]" : "h-[700px]"
+        } w-11/12 max-w-7xl relative m-1 rounded-lg border border-neutral-700 bg-transparent/80 p-4`}
       >
         {!showSuccessMsg ? (
           <SideBar currentStepIndex={currentStepIndex} goTo={goTo} />
@@ -140,7 +186,7 @@ export default function Home() {
           ""
         )}
         <main
-          className={`${showSuccessMsg ? "w-full" : "w-full md:mt-5 md:w-[65%]"}`}
+          className={`${showSuccessMsg ? "w-full" : "w-full md:mt-5 md:w-[70%]"}`}
         >
           {showSuccessMsg ? (
             <AnimatePresence mode="wait">
