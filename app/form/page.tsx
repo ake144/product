@@ -229,7 +229,7 @@ export default function Home() {
                     className={`${
                       isFirstStep
                         ? "invisible"
-                        : "visible bg-transparent underline underline-offset-3 hover:bg-transparent text-neutral-200 hover:text-white"
+                        : "visible bg-transparent underline underline-offset-2 hover:bg-transparent text-neutral-200 hover:text-white"
                     }`}
                   >
                     Go Back
