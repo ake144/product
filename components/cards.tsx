@@ -1,8 +1,9 @@
-"use client"
+"use client";
 
 import { features } from "@/lib/data";
 import { motion } from "framer-motion";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
+import FuzzyOverlay from "./fuzzy";
 
 export default function DesignSection() {
   return (
@@ -34,14 +35,16 @@ export default function DesignSection() {
           {features.map((feature, index) => (
             <motion.div
               key={index}
+              className="relative"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <CardContainer className="inter-var">
-                <CardBody className="relative group h-full min-h-[300px] bg-gradient-to-r from-purple-800/20 to-indigo-800/20 rounded-2xl p-8 hover:border-purple-500/30 transition-all duration-300">
+                <CardBody className="relative overflow-hidden group h-full min-h-[300px] h-[300px] bg-gradient-to-r from-purple-800/20 to-indigo-800/20 rounded-2xl p-8 hover:border-purple-500/30 transition-all duration-300">
                   <div className="absolute inset-0 bg-gradient-to-br from-purple-800/20 to-indigo-800/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <FuzzyOverlay />
                   <CardItem
                     translateZ="100"
                     className="bg-gradient-to-br from-purple-600 to-indigo-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6 shadow-lg"
