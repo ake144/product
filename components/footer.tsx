@@ -4,9 +4,9 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 const Footer = () => {
   const separatorStyle =
-    "w-[0.35rem] h-[.35rem] bg-black dark:bg-white rounded-full mx-3";
+    "w-[0.35rem] h-[.35rem] bg-black  dark:bg-white rounded-full mx-3";
   return (
-    <footer className="w-full text-white bg-[#0a0a14] border-white/20 relative mt-0 border-t border-transparent-white/10 px-8 py-[3rem] gap-8 text-sm ">
+    <footer className="w-full text-white bg-black/90 border-white/20 relative mt-0 border-t border-transparent-white/10 px-8 py-[3rem] gap-8 text-sm ">
       <div
         className="
              grid place-items-center grid-cols-1 md:grid-cols-2
@@ -28,7 +28,7 @@ const Footer = () => {
           Need Help?{" "}
           <span className="flex gap-2 items-center underline underline-offset-4 cursor-pointer opacity-60">
             <Link href={"mailto:hello@arezarmada.com"}>
-              hello@arezarmada.com
+              product@frontier.com
             </Link>
             <ArrowUpRight className="w-4 h-4" />
           </span>
