@@ -225,11 +225,11 @@ export default function Home() {
                   <Button
                     onClick={previousStep}
                     type="button"
-                    variant="ghost"
+                    variant={"default"}
                     className={`${
                       isFirstStep
                         ? "invisible"
-                        : "visible p-0 text-neutral-200 hover:text-white"
+                        : "visible bg-transparent underline underline-offset-3 hover:bg-transparent text-neutral-200 hover:text-white"
                     }`}
                   >
                     Go Back
