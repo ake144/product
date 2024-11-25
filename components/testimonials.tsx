@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { technologies } from "@/lib/data";
 import { motion } from "framer-motion";
@@ -6,14 +6,12 @@ import { motion } from "framer-motion";
 const TestimonialsSkill = () => {
   return (
     <section id="testimonials" className="relative py-40 overflow-hidden">
-  
       <div className="absolute inset-0 bg-black/95" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_600px_at_center_90%,rgba(59,7,100,0.7),transparent)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_800px_at_center_90%,rgba(59,7,100,0.5),transparent)]" />
 
       <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
 
       <div className="relative z-10">
-
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -43,11 +41,9 @@ const TestimonialsSkill = () => {
           <div className="overflow-hidden py-10">
             <motion.div
               className="flex gap-12 items-center"
-
               animate={{
                 x: [0, -(technologies.length * 140)], // Assuming each item has a minimum width of 140px
               }}
-
               transition={{
                 x: {
                   repeat: Infinity,

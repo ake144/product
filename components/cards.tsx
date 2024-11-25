@@ -4,7 +4,8 @@ import { features } from "@/lib/data";
 import { motion } from "framer-motion";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import FuzzyOverlay from "./fuzzy";
-
+import GridPattern from "./grid-layout";
+import { cn } from "@/lib/utils";
 export default function DesignSection() {
   return (
     <section className="relative py-32 overflow-hidden">

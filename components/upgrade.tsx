@@ -3,6 +3,7 @@
 import { benefits } from "@/lib/data";
 import { motion } from "framer-motion";
 import { PinContainer } from "@/components/ui/3d-pin";
+import FuzzyOverlay from "./fuzzy";
 
 const UpgradeSection = () => {
   const containerVariants = {
@@ -28,11 +29,9 @@ const UpgradeSection = () => {
 
   return (
     <section className="relative py-32 overflow-hidden bg-black">
-
       <div className="absolute inset-0 bg-gradient-to-b from-gray-950 to-black opacity-90" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_800px_at_center,#3b0764,transparent)] opacity-40" />
 
- 
       <motion.div
         className="absolute top-10 left-1/4 w-24 h-24 bg-purple-700 rounded-full opacity-30 blur-3xl"
         animate={{ y: [0, 30, 0] }}
@@ -71,7 +70,6 @@ const UpgradeSection = () => {
           </motion.p>
         </motion.div>
 
-      
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -86,7 +84,8 @@ const UpgradeSection = () => {
               className="h-[24rem] flex items-center justify-center"
             >
               <PinContainer title={benefit.title} href="#">
-                <div className="flex flex-col p-4 tracking-tight text-slate-100/50 w-[20rem] h-[20rem]">
+                <div className="flex overflo-hidden flex-col p-4 tracking-tight text-slate-100/50 w-[20rem] h-[15rem]">
+                  <FuzzyOverlay />
                   <div className="absolute top-0 right-0 bg-gradient-to-br from-purple-600/20 to-indigo-600/20 px-4 py-1 rounded-bl-2xl rounded-tr-2xl">
                     <span className="text-purple-300 text-sm font-medium">
                       {benefit.stat}
@@ -101,7 +100,7 @@ const UpgradeSection = () => {
                   <p className="text-slate-400 text-sm leading-relaxed">
                     {benefit.desc}
                   </p>
-                  <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-purple-500 via-indigo-500 to-blue-500 opacity-20" />
+                  {/* <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-purple-500 via-indigo-500 to-blue-500 opacity-20" /> */}
                 </div>
               </PinContainer>
             </motion.div>
@@ -109,7 +108,6 @@ const UpgradeSection = () => {
         </motion.div>
       </div>
 
- 
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent" />
     </section>
   );

@@ -27,10 +27,6 @@ export function LandingPage() {
           <section className="pt-24 px-4 bg-black/80 backdrop-blur-sm">
             <div className="min-h-screen bg-black text-white">
               <TestimonialsSkill />
-
-              <section className=" px-4 bg-gradient-to-b from-purple-900/20 to-transparent">
-                <ContactForm />
-              </section>
             </div>
           </section>
 
