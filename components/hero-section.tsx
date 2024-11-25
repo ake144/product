@@ -19,6 +19,11 @@ const HeroSection = () => {
 
   return (
     <section className="relative font-geist-sans h-[calc(100vh-5rem)] flex items-center">
+      <img
+        src="https://wope.com/images/hero/hero-background-top.png"
+        alt="grid image"
+        className="hidden absolute z-50 top-0 left-0 md:block"
+      />
       <div className="absolute inset-0 bg-gradient-to-b from-purple-950/40 via-black to-black" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_500px_at_50%_200px,#2c0548,transparent)] opacity-80" />
       <div className="container mx-auto px-4 relative z-10">
