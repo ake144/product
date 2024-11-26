@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description: 'Takes you from MVP to company',
     images: [
       {
-        url: '/images/image3.png',
+        url: '/image3.png',
         width: 1200,
         height: 630,
         alt: 'product frontier',
