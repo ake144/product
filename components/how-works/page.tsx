@@ -1,4 +1,5 @@
 import { RocketIllustrator } from "../icons";
+import { ProcessSteps } from "../processSteps";
 export default function HowWorks() {
   return (
     <div className="relative bg-transparent text-white py-16 px-4">
@@ -27,68 +28,8 @@ export default function HowWorks() {
         </div>
 
         {/* Grid Layout */}
-        <div className="grid md:grid-cols-2 space-x-10 gap-20 items-center">
-          {/* Steps Section */}
-          <div className="space-y-12 relative">
-            <div className="absolute left-6 top-12 bottom-12 w-px bg-white hidden sm:block" />
-
-            {/* Step 1 */}
-            <div className="flex gap-11 mb-6">
-              <div className="relative">
-                <div className="w-12 h-12 bg-purple-800 rounded-full flex items-center justify-center text-white font-bold">
-                  01
-                </div>
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold mb-2">Product Planning</h3>
-                <p className="text-gray-400">
-                  Together we create your product roadmap, prioritizing the
-                  highest value tasks.
-                </p>
-              </div>
-            </div>
-
-            {/* Step 2 */}
-            <div className="flex gap-11 mb-6">
-              <div className="relative">
-                <div className="w-12 h-12 bg-purple-800 rounded-full flex items-center justify-center text-white font-bold">
-                  02
-                </div>
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold mb-2">Product Building</h3>
-                <p className="text-gray-400">
-                  A few weeks of focus bring your vision to life, tested and
-                  optimized with data-driven insights.
-                </p>
-              </div>
-            </div>
-
-            {/* Step 3 */}
-            <div className="flex gap-11 ">
-              <div className="relative">
-                <div className="w-12 h-12 bg-purple-800 rounded-full flex items-center justify-center text-white font-bold">
-                  03
-                </div>
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold mb-2">
-                  Iterate, Launch, Repeat
-                </h3>
-                <p className="text-gray-400">
-                  Agile sprints cross the finish line, monitor performance, and
-                  iterate in real-time.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="relative h-[500px] hidden md:block">
-            <div>
-              <RocketIllustrator className="w-[550px] h-[550px]" />
-            </div>
-          </div>
-        </div>
+        
+       <ProcessSteps />
       </div>
     </div>
   );

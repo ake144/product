@@ -56,6 +56,24 @@ export const technologies  = [
   ];
 
 
+  export const steps = [
+    {
+      number: '1',
+      title: 'Product Planning',
+      description: 'Together we create your product roadmap, prioritizing the highest value tasks.',
+    },
+    {
+      number: '2',
+      title: 'Product Building',
+      description: 'A few weeks of focus bring your vision to life, tested and optimized with data-driven insights.',
+    },
+    {
+      number: '3',
+      title: 'Iterate, Launch, Repeat',
+      description: 'Agile sprints cross the finish line, monitor performance, and iterate in real-time.',
+    },
+  ];
+
 
   export 
   const faqItems = [
