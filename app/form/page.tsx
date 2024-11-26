@@ -11,7 +11,7 @@ import FinalStep from "@/components/forms/final-form";
 import SuccessMessage from "@/components/forms/success-msg";
 import SideBar from "@/components/sidebar";
 import { motion } from "framer-motion";
-import { Span } from "next/dist/trace";
+
 
 
 interface AddOn {
