@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import * as ToggleGroup from "@radix-ui/react-toggle-group";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";

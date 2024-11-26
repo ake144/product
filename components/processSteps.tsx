@@ -2,9 +2,7 @@
 
 import { Step } from "@/lib/animatedStep";
 import { steps } from "@/lib/data";
-// import { RocketIllustrator } from "@/lib/RocketIllustrator";
 import { RocketIllustrator } from "@/components/icons";
-import { motion } from "framer-motion";
 
 
 
